@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35d4f2b9-d777-4491-b06d-bcf47b2313a8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aircraft/Aircraft.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -10,6 +10,19 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Aircraft/Aircraft.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -32,6 +45,11 @@
             <path>
               <item name="avaj-launcher" type="b2602c69:ProjectViewProjectNode" />
               <item name="avaj-launcher" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="avaj-launcher" type="b2602c69:ProjectViewProjectNode" />
+              <item name="avaj-launcher" type="462c0819:PsiDirectoryNode" />
+              <item name="Aircraft" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -69,15 +87,16 @@
       <option name="presentableId" value="Default" />
       <updated>1561628863606</updated>
       <workItem from="1561628871185" duration="393000" />
-      <workItem from="1562267052786" duration="229000" />
+      <workItem from="1562267052786" duration="516000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="622000" />
+    <option name="totallyTimeSpent" value="909000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="100" y="20" width="1400" height="820" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25373134" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -111,5 +130,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Aircraft/Aircraft.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
   </component>
 </project>
