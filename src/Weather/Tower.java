@@ -1,4 +1,4 @@
 package Weather;
 
-public class Tower {
+public abstract class Tower {
 }

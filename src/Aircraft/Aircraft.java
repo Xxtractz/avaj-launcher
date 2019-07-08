@@ -1,6 +1,6 @@
 package Aircraft;
 
-public class Aircraft {
+public abstract class Aircraft {
     protected Long id;
     protected String name;
     protected Coordinates coordinates;

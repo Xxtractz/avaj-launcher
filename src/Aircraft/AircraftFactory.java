@@ -1,4 +1,4 @@
 package Aircraft;
 
-public class AircraftFactory {
+public abstract class AircraftFactory {
 }
