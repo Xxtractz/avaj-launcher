@@ -1,10 +1,12 @@
 package Aircraft;
 
-public class JetPlane extends Aircraft implements Flyable
+import Aircraft.Aircraft;
+
+public class Helicopter extends Aircraft implements Flyable
 {
     private WeatherTower weatherTower;
 
-    JetPlane(String name, Coordinates  JetPlane(String name, Aircraft.Coordinates coordinates) {
+    Helicopter(String name, Coordinates coordinates) {
         super(name, coordinates);
     }
 

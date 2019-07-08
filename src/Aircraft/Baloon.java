@@ -1,10 +1,10 @@
 package Aircraft;
 
-public class JetPlane extends Aircraft implements Flyable
+public class Baloon extends Aircraft implements Flyable
 {
     private WeatherTower weatherTower;
 
-    JetPlane(String name, Coordinates  JetPlane(String name, Aircraft.Coordinates coordinates) {
+    Baloon(String name, Coordinates  JetPlane(String name, Aircraft.Coordinates coordinates) {
         super(name, coordinates);
     }
 
