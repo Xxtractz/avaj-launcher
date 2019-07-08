@@ -4,6 +4,6 @@ import Weather.WeatherTower;
 
 public interface Flyable
 {
-    public void updateConditionds();
+    public void updateConditions();
     public void registerTower(WeatherTower weatherTower);
 }

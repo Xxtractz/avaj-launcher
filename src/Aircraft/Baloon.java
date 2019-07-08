@@ -1,6 +1,7 @@
 package Aircraft;
 
 
+import Weather.WeatherTower;
 
 public class Baloon extends Aircraft implements Flyable
 {
@@ -11,7 +12,7 @@ public class Baloon extends Aircraft implements Flyable
     }
 
     @Override
-    public void updateConditionds() {
+    public void updateConditions() {
 
     }
 

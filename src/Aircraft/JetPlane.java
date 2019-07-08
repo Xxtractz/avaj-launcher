@@ -1,15 +1,17 @@
 package Aircraft;
 
+import Weather.WeatherTower;
+
 public class JetPlane extends Aircraft implements Flyable
 {
     private WeatherTower weatherTower;
 
-    JetPlane(String name, Aircraft.Coordinates coordinates) {
+    JetPlane(String name, Coordinates coordinates) {
         super(name, coordinates);
     }
 
     @Override
-    public void updateConditionds() {
+    public void updateConditions() {
 
     }
 
