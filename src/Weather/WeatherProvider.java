@@ -3,8 +3,8 @@ package Weather;
 import Aircraft.Coordinates;
 
 public class WeatherProvider {
-    private static WeatherProvider weatherProvider;
-    private static String [] weather;
+    private static WeatherProvider weatherProvider = null;
+    private static String [] weather = {"RAIN","FOG","SUN","SNOW"};
 
     private WeatherProvider(){
 
