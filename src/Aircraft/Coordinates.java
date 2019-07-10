@@ -25,6 +25,10 @@ public class Coordinates {
     }
 
     public void setHeight(int height) {
+        if (height > 100)
+            height = 100;
+        else if (height < 0)
+            height = 0;
         this.height = height;
     }
 
