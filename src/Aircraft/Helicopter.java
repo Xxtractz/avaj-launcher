@@ -16,30 +16,30 @@ public class Helicopter extends Aircraft implements Flyable
         switch (weather){
             case "RAIN":
                 coordinates = new Coordinates(
-                  coordinates.getLongitude(),
+                  coordinates.getLongitude() + 5,
                   coordinates.getLatitude(),
                   coordinates.getHeight()
                 );
                 break;
             case "FOG":
                 coordinates = new Coordinates(
-                        coordinates.getLongitude(),
+                        coordinates.getLongitude() + 1,
                         coordinates.getLatitude(),
                         coordinates.getHeight()
                 );
                 break;
             case "SUN":
                 coordinates = new Coordinates(
-                        coordinates.getLongitude(),
+                        coordinates.getLongitude() + 10,
                         coordinates.getLatitude(),
-                        coordinates.getHeight()
+                        coordinates.getHeight() + 2
                 );
                 break;
             case "SNOW":
                 coordinates = new Coordinates(
                         coordinates.getLongitude(),
                         coordinates.getLatitude(),
-                        coordinates.getHeight()
+                        coordinates.getHeight() - 12
                 );
                 break;
             default:
