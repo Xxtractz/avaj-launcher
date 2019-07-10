@@ -1,12 +1,7 @@
 package Simulator;
 
-public class Simulator {
-    private static Simulator ourInstance = new Simulator();
+public class Simulator{
+    public static void main(String[] args) {
 
-    public static Simulator getInstance() {
-        return ourInstance;
-    }
-
-    private Simulator() {
     }
 }
