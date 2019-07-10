@@ -18,10 +18,13 @@ public class WeatherProvider {
     }
 
     public String getCurrentWeather(Coordinates coordinates){
-        Random randweather = new Random();
+        int selectWeather ;
 
-        int selectWeather = 0;
-        selectWeather = randweather.nextInt(4);
+        selectWeather = 0;
+        if ((coordinates.getLongitude() > 0) && (coordinates.getLatitude() > 0) && (coordinates.getHeight() > 0)){
+            Random randweather = new Random();
+            selectWeather = randweather.nextInt(4);
+        }
         return weather[selectWeather];
     }
 
