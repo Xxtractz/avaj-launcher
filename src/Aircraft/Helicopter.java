@@ -12,9 +12,14 @@ public class Helicopter extends Aircraft implements Flyable
 
     @Override
     public void updateConditions() {
-        String weather = this.weatherTower.getWeather(this.coordinates);
+        String weather = this.weatherTower.getWeather(coordinates);
         switch (weather){
             case "RAIN":
+                coordinates = new Coordinates(
+                  coordinates.getLongitude(),
+                  coordinates.getLatitude(),
+                  coordinates.getHeight()
+                );
                 break;
             case "FOG":
                 break;
@@ -24,6 +29,7 @@ public class Helicopter extends Aircraft implements Flyable
                 break;
             default:
                 break;
+        }
     }
 
     @Override
