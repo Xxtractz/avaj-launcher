@@ -22,8 +22,8 @@ public class WeatherProvider {
 
         selectWeather = 0;
         if ((coordinates.getLongitude() > 0) && (coordinates.getLatitude() > 0) && (coordinates.getHeight() > 0)){
-            Random randweather = new Random();
-            selectWeather = randweather.nextInt(4);
+            Random rand = new Random();
+            selectWeather = rand.nextInt(4);
         }
         return weather[selectWeather];
     }

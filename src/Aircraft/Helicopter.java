@@ -22,10 +22,25 @@ public class Helicopter extends Aircraft implements Flyable
                 );
                 break;
             case "FOG":
+                coordinates = new Coordinates(
+                        coordinates.getLongitude(),
+                        coordinates.getLatitude(),
+                        coordinates.getHeight()
+                );
                 break;
             case "SUN":
+                coordinates = new Coordinates(
+                        coordinates.getLongitude(),
+                        coordinates.getLatitude(),
+                        coordinates.getHeight()
+                );
                 break;
             case "SNOW":
+                coordinates = new Coordinates(
+                        coordinates.getLongitude(),
+                        coordinates.getLatitude(),
+                        coordinates.getHeight()
+                );
                 break;
             default:
                 break;
