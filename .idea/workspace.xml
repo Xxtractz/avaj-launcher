@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1145ee9c-80be-43d9-aaeb-bd77b584b6f2" name="Default Changelist" comment="weather">
-      <change beforePath="$PROJECT_DIR$/src/Aircraft/Helicopter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Aircraft/Helicopter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Weather/WeatherProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Weather/WeatherProvider.java" afterDir="false" />
+    <list default="true" id="1145ee9c-80be-43d9-aaeb-bd77b584b6f2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/Aircraft/Baloon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Aircraft/Baloon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Aircraft/JetPlane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Aircraft/JetPlane.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,11 +32,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Aircraft/JetPlane.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+            <state relative-caret-position="524">
+              <caret line="41" column="51" selection-start-line="41" selection-start-column="51" selection-end-line="41" selection-end-column="51" />
               <folding>
                 <element signature="e#200#201#0" expanded="true" />
                 <element signature="e#240#241#0" expanded="true" />
@@ -45,11 +45,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Aircraft/Helicopter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
-              <caret line="26" column="50" lean-forward="true" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
+            <state relative-caret-position="255">
+              <caret line="15" selection-start-line="15" selection-end-line="46" selection-end-column="9" />
+              <folding>
+                <element signature="e#204#205#0" expanded="true" />
+                <element signature="e#244#245#0" expanded="true" />
+                <element signature="e#390#834#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -57,8 +62,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Aircraft/Baloon.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="10" column="33" lean-forward="true" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+            <state relative-caret-position="238">
+              <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+              <folding>
+                <element signature="e#396#1513#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -115,18 +123,17 @@
         <option value="$PROJECT_DIR$/src/Weather/Tower.java" />
         <option value="$PROJECT_DIR$/src/Weather/WeatherTower.java" />
         <option value="$PROJECT_DIR$/src/Aircraft/Flyable.java" />
-        <option value="$PROJECT_DIR$/src/Aircraft/Baloon.java" />
-        <option value="$PROJECT_DIR$/src/Aircraft/JetPlane.java" />
         <option value="$PROJECT_DIR$/src/Aircraft/AircraftFactory.java" />
         <option value="$PROJECT_DIR$/src/Aircraft/Coordinates.java" />
         <option value="$PROJECT_DIR$/src/Weather/WeatherProvider.java" />
         <option value="$PROJECT_DIR$/src/Aircraft/Helicopter.java" />
+        <option value="$PROJECT_DIR$/src/Aircraft/Baloon.java" />
+        <option value="$PROJECT_DIR$/src/Aircraft/JetPlane.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-7" />
     <option name="width" value="814" />
     <option name="height" value="867" />
   </component>
@@ -223,15 +230,24 @@
       <updated>1562577183978</updated>
       <workItem from="1562577242186" duration="8278000" />
     </task>
+    <task id="LOCAL-00001" summary="Helicopter">
+      <created>1562792106373</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1562792106373</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11450000" />
+    <option name="totallyTimeSpent" value="12521000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <frame x="-7" y="0" width="814" height="867" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.08483291" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1750663" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -265,7 +281,8 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="Helicopter" />
+    <option name="LAST_COMMIT_MESSAGE" value="Helicopter" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Avaj.iml">
@@ -282,17 +299,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Aircraft/JetPlane.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
-          <folding>
-            <element signature="e#200#201#0" expanded="true" />
-            <element signature="e#240#241#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -349,17 +355,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Aircraft/Baloon.java">
+    <entry file="file://$PROJECT_DIR$/src/Aircraft/Helicopter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="10" column="33" lean-forward="true" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+        <state relative-caret-position="255">
+          <caret line="15" selection-start-line="15" selection-end-line="46" selection-end-column="9" />
+          <folding>
+            <element signature="e#204#205#0" expanded="true" />
+            <element signature="e#244#245#0" expanded="true" />
+            <element signature="e#390#834#0" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Aircraft/Helicopter.java">
+    <entry file="file://$PROJECT_DIR$/src/Aircraft/Baloon.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="26" column="50" lean-forward="true" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
+        <state relative-caret-position="238">
+          <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+          <folding>
+            <element signature="e#396#1513#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Aircraft/JetPlane.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="524">
+          <caret line="41" column="51" selection-start-line="41" selection-start-column="51" selection-end-line="41" selection-end-column="51" />
+          <folding>
+            <element signature="e#200#201#0" expanded="true" />
+            <element signature="e#240#241#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
