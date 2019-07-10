@@ -2,8 +2,10 @@ package Weather;
 
 import Aircraft.Flyable;
 
+import java.util.ArrayList;
+
 public abstract class Tower {
-    private Flyable observers;
+    private ArrayList<Flyable> observers = new ArrayList<Flyable>();
 
     public void register(Flyable flyable){
 
