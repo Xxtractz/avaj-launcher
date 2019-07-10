@@ -4,11 +4,10 @@ import Aircraft.Coordinates;
 
 public class WeatherTower extends Tower {
     public String getWeather(Coordinates coordinates) {
-        String weather = WeatherProvider.getProvider().getCurrentWeather(coordinates);
-        return weather;
+        return WeatherProvider.getProvider().getCurrentWeather(coordinates);
     }
 
-    void changeWeather() {
-
+    void changeWeather() throws Exception {
+        conditionsChanged();
     }
 }
