@@ -7,14 +7,20 @@ public class Coordinates {
 
 
     Coordinates(int longitude, int latitude, int height ){
-
+        setLongitude(longitude);
+        setLatitude(latitude);
+        setHeight(height);
     }
 
     public void setLongitude(int longitude) {
+        if (longitude < 0)
+            longitude = 0;
         this.longitude = longitude;
     }
 
     public void setLatitude(int latitude) {
+        if (latitude < 0)
+            latitude = 0;
         this.latitude = latitude;
     }
 
