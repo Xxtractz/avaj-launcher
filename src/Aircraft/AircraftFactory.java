@@ -19,7 +19,7 @@ public abstract class AircraftFactory
                 case "HELICOPTER":
                     return new Helicopter(name, coordinates);
                     default:
-                        System.err.println("\n***Invalid Flyable error, only baloon,jetplane,helicopter***".toUpperCase());
+                        System.err.println("\n***Invalid Flyable error, only baloon,jetplane,helicopter are accepted***".toUpperCase());
                         System.exit(1);
                         return null;
             }
