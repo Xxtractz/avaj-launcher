@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1145ee9c-80be-43d9-aaeb-bd77b584b6f2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Aircraft/Baloon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Aircraft/Baloon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Simulator/Logger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Simulator/Logger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scenario.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -71,6 +70,15 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/scenario.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Simulator/Logger.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="313">
@@ -119,6 +127,7 @@
         <option value="$PROJECT_DIR$/src/Aircraft/Aircraft.java" />
         <option value="$PROJECT_DIR$/src/Aircraft/Baloon.java" />
         <option value="$PROJECT_DIR$/src/Simulator/Logger.java" />
+        <option value="$PROJECT_DIR$/src/scenario.txt" />
       </list>
     </option>
   </component>
@@ -232,12 +241,12 @@
       <workItem from="1562918444125" duration="889000" />
       <workItem from="1562920897820" duration="6945000" />
       <workItem from="1563176296095" duration="1400000" />
-      <workItem from="1563203592153" duration="2193000" />
+      <workItem from="1563203592153" duration="2397000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26409000" />
+    <option name="totallyTimeSpent" value="26613000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -425,6 +434,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Simulator/Logger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="19" column="40" lean-forward="true" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Aircraft/Baloon.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -432,10 +448,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Simulator/Logger.java">
+    <entry file="file://$PROJECT_DIR$/src/scenario.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="19" column="40" lean-forward="true" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
+        <state relative-caret-position="153">
+          <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
         </state>
       </provider>
     </entry>
