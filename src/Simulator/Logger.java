@@ -5,18 +5,15 @@ import java.util.*;
 
 public class Logger {
     public static ArrayList<String> logMessage = new ArrayList<>();
+    private static File logTofile = null;
+    private static FileWriter logFile = null;
+    private static BufferedWriter logWrite = null;
 
-    public static void printLog(){
+    public static void writeToFile(){
         FileWriter logFile = null;
         try {
             logFile = new FileWriter("Simulator.txt", true);
             BufferedWriter logWrite = new BufferedWriter(logFile);
-            for (String s: logMessage) {
-                logWrite.write(s);
-                logWrite.newLine();
-                logWrite.flush();
-            }
-            logWrite.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
