@@ -3,7 +3,6 @@ package Simulator;
 import Aircraft.AircraftFactory;
 import Aircraft.Flyable;
 import Weather.*;
-
 import java.io.*;
 import java.util.*;
 
@@ -11,7 +10,7 @@ public class Simulator{
     private static WeatherTower weatherTower;
     private static List<Flyable> flyables = new ArrayList<Flyable>();
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
 
         try
         {
@@ -57,8 +56,6 @@ public class Simulator{
             System.out.println("null");
         } catch (NumberFormatException e) {
             System.out.println("not a valid number entered in file");
-        } finally {
-            writr.closeFile();
         }
     }
 }
