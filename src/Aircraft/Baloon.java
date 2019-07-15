@@ -21,6 +21,7 @@ public class Baloon extends Aircraft implements Flyable
                         coordinates.getLatitude(),
                         coordinates.getHeight() - 5
                 );
+                logger.addLog("Baloon" + "#" + this.name  + "(" + this.id + "):" + " Its so hot that the burner lit up by itself say whaaaaaaaat?");
                 break;
             case "FOG":
                 coordinates = new Coordinates(
