@@ -10,10 +10,10 @@ public class Logger {
     private static BufferedWriter logWrite = null;
 
     public static void writeToFile(){
-        FileWriter logFile = null;
         try {
-            logFile = new FileWriter("Simulator.txt", true);
-            BufferedWriter logWrite = new BufferedWriter(logFile);
+            logTofile = new File("Simulator.txt");
+            logFile = new FileWriter(logTofile, true);
+            logWrite = new BufferedWriter(logFile);
         } catch (IOException e) {
             e.printStackTrace();
         }
