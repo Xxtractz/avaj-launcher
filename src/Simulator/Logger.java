@@ -20,6 +20,21 @@ public class Logger {
     }
 
     public static void addLog(String s){
-        logMessage.add(s);
+        try {
+            logWrite.write(s);
+            logWrite.newLine();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static void closeLogger(){
+        if (logWrite != null) {
+            try {
+                logWrite.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
     }
 }
