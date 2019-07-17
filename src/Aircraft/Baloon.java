@@ -29,6 +29,7 @@ public class Baloon extends Aircraft implements Flyable
                         coordinates.getLatitude(),
                         coordinates.getHeight() - 3
                 );
+                logger.addLog("Baloon" + "#" + this.name  + "(" + this.id + "):" + " OMG I cant see anything");
                 break;
             case "SUN":
                 coordinates = new Coordinates(
@@ -36,6 +37,7 @@ public class Baloon extends Aircraft implements Flyable
                         coordinates.getLatitude(),
                         coordinates.getHeight() + 4
                 );
+                logger.addLog("Baloon" + "#" + this.name  + "(" + this.id + "):" + " OMG are you sure we not in Limpopo, is very hot");
                 break;
             case "SNOW":
                 coordinates = new Coordinates(
