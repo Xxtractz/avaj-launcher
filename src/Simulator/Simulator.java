@@ -2,37 +2,33 @@ package Simulator;
 
 import Aircraft.*;
 import Weather.*;
+
 import java.io.*;
 import java.util.*;
 
-public class Simulator{
+public class Simulator {
     private static WeatherTower weatherTower;
     private static List<Flyable> flyables = new ArrayList<Flyable>();
 
     public static void main(String[] args) throws Exception {
-        try
-        {
+        try {
             Logger.writeToFile();
             BufferedReader reader = new BufferedReader(new FileReader("scenario.txt"));
             String line = reader.readLine();
-            if (line != null)
-            {
+            if (line != null) {
                 weatherTower = new WeatherTower();
                 int simulations = Integer.parseInt(line.split(" ")[0]);
                 System.out.println(simulations + " Simulations to do");
-                if (simulations < 0)
-                {
+                if (simulations < 0) {
                     System.out.println("Invalid simulations count " + simulations);
                     System.exit(1);
                 }
-                while ((line = reader.readLine()) != null)
-                {
-                     Flyable flyable = AircraftFactory.newAircraft(line.split(" ")[0], line.split(" ")[1],
+                while ((line = reader.readLine()) != null) {
+                    Flyable flyable = AircraftFactory.newAircraft(line.split(" ")[0], line.split(" ")[1],
                             Integer.parseInt(line.split(" ")[2]), Integer.parseInt(line.split(" ")[3]),
                             Integer.parseInt(line.split(" ")[4]));
 
-                    if (flyable != null)
-                    {
+                    if (flyable != null) {
                         flyables.add(flyable);
                     }
                 }
@@ -45,8 +41,7 @@ public class Simulator{
             }
             Logger.addLog("\n *************** Simulation has ended ************");
             reader.close();
-        }
-        catch (FileNotFoundException e) {
+        } catch (FileNotFoundException e) {
             System.out.println("File " + args[0] + " Does not exist");
         } catch (IOException e) {
             System.out.println("There was an error while reading the file " + args[0]);
@@ -56,7 +51,7 @@ public class Simulator{
             System.out.println("null");
         } catch (NumberFormatException e) {
             System.out.println("not a valid number entered in file");
-        }finally {
+        } finally {
             Logger.closeLogger();
         }
     }
