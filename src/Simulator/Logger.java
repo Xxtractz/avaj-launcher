@@ -7,7 +7,7 @@ public class Logger {
     private static FileWriter logFile = null;
     private static BufferedWriter logWrite = null;
 
-    public static void writeToFile(){
+    public void writeToFile(){
         try {
             logTofile = new File("simulator.txt");
             logFile = new FileWriter(logTofile,false);

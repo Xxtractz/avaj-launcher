@@ -6,13 +6,15 @@ import Weather.*;
 import java.io.*;
 import java.util.*;
 
+
 public class Simulator {
     private static WeatherTower weatherTower;
     private static List<Flyable> flyables = new ArrayList<Flyable>();
 
     public static void main(String[] args) throws Exception {
+        Logger log = new Logger();
         try {
-            Logger.writeToFile();
+            log.writeToFile();
             BufferedReader reader = new BufferedReader(new FileReader("scenario.txt"));
             String line = reader.readLine();
             if (line != null) {
@@ -39,7 +41,7 @@ public class Simulator {
                     weatherTower.changeWeather();
                 }
             }
-            Logger.addLog("\n *************** Simulation has ended ************");
+            log.addLog("\n *************** Simulation has ended ************");
             reader.close();
         } catch (FileNotFoundException e) {
             System.out.println("File " + args[0] + " Does not exist");
@@ -52,7 +54,7 @@ public class Simulator {
         } catch (NumberFormatException e) {
             System.out.println("not a valid number entered in file");
         } finally {
-            Logger.closeLogger();
+            log.closeLogger();
         }
     }
 }
