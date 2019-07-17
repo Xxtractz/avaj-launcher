@@ -21,7 +21,7 @@ public class Baloon extends Aircraft implements Flyable
                         coordinates.getLatitude(),
                         coordinates.getHeight() - 5
                 );
-                logger.addLog("Baloon" + "#" + this.name  + "(" + this.id + "):" + " OMG Its about to rain");
+                logger.addLog("Baloon#" + this.name  + "(" + this.id + "):" + " OMG Its about to rain");
                 break;
             case "FOG":
                 coordinates = new Coordinates(
@@ -29,7 +29,7 @@ public class Baloon extends Aircraft implements Flyable
                         coordinates.getLatitude(),
                         coordinates.getHeight() - 3
                 );
-                logger.addLog("Baloon" + "#" + this.name  + "(" + this.id + "):" + " OMG I cant see anything");
+                logger.addLog("Baloon#" + this.name  + "(" + this.id + "):" + " OMG I cant see anything");
                 break;
             case "SUN":
                 coordinates = new Coordinates(
@@ -37,7 +37,7 @@ public class Baloon extends Aircraft implements Flyable
                         coordinates.getLatitude(),
                         coordinates.getHeight() + 4
                 );
-                logger.addLog("Baloon" + "#" + this.name  + "(" + this.id + "):" + " OMG are you sure we not in Limpopo, is very hot");
+                logger.addLog("Baloon#" + this.name  + "(" + this.id + "):" + " OMG  is very hot");
                 break;
             case "SNOW":
                 coordinates = new Coordinates(
@@ -45,16 +45,17 @@ public class Baloon extends Aircraft implements Flyable
                         coordinates.getLatitude(),
                         coordinates.getHeight() - 15
                 );
-                logger.addLog("Baloon" + "#" + this.name  + "(" + this.id + "):" + " OMG The SNOW BALL TIME");
+                logger.addLog("Baloon#" + this.name  + "(" + this.id + "):" + " OMG The SNOW its BALL TIME");
                 break;
             default:
 
                 break;
         }
         if (this.coordinates.getHeight() <= 0){
-            logger.addLog("Baloon" + "#" + this.name  + "(" + this.id + "):" + " is landing");
+            logger.addLog("Baloon#" + this.name  + "(" + this.id + "):" + " is landing");
             this.weatherTower.unregister(this);
-            logger.addLog("Message from Tower : Baloon" + "#" + this.name  + "(" + this.id + "):" + " has been unregistered");
+            logger.addLog("Message from Tower : Baloon" + "#" + this.name  + "(" + this.id + "):"
+                    + " has been unregistered");
 
         }
     }
@@ -63,6 +64,7 @@ public class Baloon extends Aircraft implements Flyable
     public void registerTower(WeatherTower weatherTower) {
         this.weatherTower = weatherTower;
         this.weatherTower.register(this);
-        logger.addLog("Message from Tower : Baloon" + "#" + this.name  + "(" + this.id + "):" + " has been registered to Weather Tower");
+        logger.addLog("Message from Tower : Baloon#" + this.name  + "(" + this.id + "):"
+                + " has been registered to Weather Tower");
     }
 }

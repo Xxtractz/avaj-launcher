@@ -43,6 +43,7 @@ public class Simulator{
                     weatherTower.changeWeather();
                 }
             }
+            Logger.addLog("\n *************** Simulation has ended ************");
             reader.close();
         }
         catch (FileNotFoundException e) {
