@@ -1,7 +1,6 @@
 package Simulator;
 
-import Aircraft.AircraftFactory;
-import Aircraft.Flyable;
+import Aircraft.*;
 import Weather.*;
 import java.io.*;
 import java.util.*;
