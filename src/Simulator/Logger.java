@@ -7,10 +7,10 @@ public class Logger {
     private static FileWriter logFile = null;
     private static BufferedWriter logWrite = null;
 
-    public void writeToFile(){
+    public static void writeToFile(){
         try {
             logTofile = new File("Simulator.txt");
-            logFile = new FileWriter(logTofile, true);
+            logFile = new FileWriter(logTofile,false);
             logWrite = new BufferedWriter(logFile);
         } catch (IOException e) {
             e.printStackTrace();

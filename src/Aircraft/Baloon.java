@@ -48,12 +48,21 @@ public class Baloon extends Aircraft implements Flyable
                 logger.addLog("Baloon" + "#" + this.name  + "(" + this.id + "):" + " OMG The SNOW BALL TIME");
                 break;
             default:
+
                 break;
+        }
+        if (this.coordinates.getHeight() <= 0){
+            logger.addLog("Baloon" + "#" + this.name  + "(" + this.id + "):" + " is landing");
+            this.weatherTower.unregister(this);
+            logger.addLog("Message from Tower : Baloon" + "#" + this.name  + "(" + this.id + "):" + " has been unregistered");
+
         }
     }
 
     @Override
     public void registerTower(WeatherTower weatherTower) {
-
+        this.weatherTower = weatherTower;
+        this.weatherTower.register(this);
+        logger.addLog("Message from Tower : Baloon" + "#" + this.name  + "(" + this.id + "):" + " has been registered to Weather Tower");
     }
 }

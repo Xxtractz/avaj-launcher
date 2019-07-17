@@ -12,6 +12,7 @@ public class Simulator{
     public static void main(String[] args) throws Exception {
         try
         {
+            Logger.writeToFile();
             BufferedReader reader = new BufferedReader(new FileReader("scenario.txt"));
             String line = reader.readLine();
             if (line != null)
@@ -54,6 +55,8 @@ public class Simulator{
             System.out.println("null");
         } catch (NumberFormatException e) {
             System.out.println("not a valid number entered in file");
+        }finally {
+            Logger.closeLogger();
         }
     }
 }
