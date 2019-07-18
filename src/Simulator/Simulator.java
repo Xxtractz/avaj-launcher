@@ -15,7 +15,7 @@ public class Simulator {
         Logger log = new Logger();
         try {
             log.writeToFile();
-            BufferedReader reader = new BufferedReader(new FileReader("scenario.txt"));
+            BufferedReader reader = new BufferedReader(new FileReader(args[0]));
             String line = reader.readLine();
             if (line != null) {
                 weatherTower = new WeatherTower();
